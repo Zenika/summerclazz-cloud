@@ -1,0 +1,7 @@
+schemaVersion: '2.0.0'
+
+commandTests:
+  - name: "Java version"
+    command: "java"
+    args: ["-version"]
+    expectedError: ["1.8.0_191"]

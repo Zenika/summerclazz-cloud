@@ -1,0 +1,14 @@
+schemaVersion: '2.0.0'
+
+metadataTest:
+  # See https://github.com/opencontainers/image-spec/blob/v1.0.0/annotations.md#pre-defined-annotation-keys
+  labels:
+    - key: org.opencontainers.image.authors
+    - key: org.opencontainers.image.source
+  env:
+    - key: JAVA_OPTIONS
+      value: -Dquarkus.http.host=0.0.0.0
+  exposedPorts: ["8080"]
+  entrypoint: ["/deployments/run-java.sh"]
+  cmd: []
+  workdir: "/opt/jboss"
