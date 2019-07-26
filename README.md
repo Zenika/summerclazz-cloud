@@ -3,6 +3,9 @@
 ## How to use
 
 
+## Renovate
+
+- Go down the rabbit hole [🕳🐇](https://github.com/apps/renovate)
 
 ## Used tools
 
