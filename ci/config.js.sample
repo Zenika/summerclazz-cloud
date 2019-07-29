@@ -1,0 +1,23 @@
+module.exports = {
+  name: "GitHub",
+  platform: "github",
+  username: "pyaillet",
+  gitAuthor: "pyaillet <pyaillet@gmail.com>",
+  password: null,
+  token: "***********",
+  default: true,
+  logFileLevel: 'info',
+  logLevel: 'info',
+  logFile: '/tmp/renovate.log',
+  onboarding: true,
+  onboardingConfig: {
+    extends: ['config:base'],
+  },
+  dockerfile: {
+    "fileMatch": ["(^|/)Dockerfile[^/]*$"]
+  },
+  repositories: [
+    'pyaillet/summerclazz-cloud',
+  ],
+  includeForks: true,
+};
